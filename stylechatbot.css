@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:whgt@400;500;600&display=swap');
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Poppins",  "sans-serif"; 
+}
+
+body{
+    background-image: url('bg\ biru.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.chatbot {
+    width: 80vw;
+    max-width: 1000px;
+    max-height: 550px;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0cqmax;
+    justify-content: center;
+}
+
+.chatbot header{ 
+    font: "Muli";
+    display: flex;
+    justify-content: center;
+    background-color:  rgb(143, 192, 237); 
+    padding: 10px; 
+}
+
+.chatbot header img{
+    width: 30px;
+}
+
+.chatbot header h2 {
+    font-size: 1.4rem ;
+    margin-left: 5px;
+    color: #fffffff7;
+    
+}
+
+.chatbot .chatbox{
+    height: 450px;
+    overflow-y: auto;
+    padding: 30px 20px 70px;
+}
+
+.chatbox .chat{
+    display: flex;
+}
+
+.chatbox .incoming img{
+    height: fit-content;
+    width: 40px;
+    padding-right: 5px;
+}
+
+.chatbot .outgoing{
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+.chatbox p {
+    max-width: 75%;
+    font-size: 0.95rem;
+    padding: 12px 16px;
+    border-radius: 10px 10px 0 10px;
+    background-color: rgb(116, 198, 249);
+    margin-bottom: 10px; 
+    word-wrap: break-word; 
+    white-space: pre-wrap; 
+}
+
+.chatbox .incoming p {
+    background-color: rgb(224, 219, 219);
+    border-radius: 10px 10px 10px 0;
+}
+
+.chatbot .chat-input{
+    position: absolute;
+    width: 80vw;
+    max-width: 1000px;
+    display: flex;
+    gap: 5px;
+    background-color: #fff;
+    padding: 5px 20px;
+    border-radius: 0 0 10px 10px;
+    border-top: 1px solid #ccc;
+}
+
+.chatbot .chat-input textarea{
+    width: 100%;
+    padding: 10px 15px 0 0;
+    resize: none;
+    cursor: pointer;
+    border: hidden;
+    font-size: 0.85rem;
+    outline: none;
+}
+
+.chat-input span{
+    font-size: 2rem;
+    width: fit-content;
+    cursor: pointer;
+    color: rgb(62, 62, 232);
+}
+
